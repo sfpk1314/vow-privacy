@@ -24,7 +24,8 @@ Only data the user chooses to connect or enter:
 - **Apple Health:** activity, sleep, heart rate and HRV, body measurements and nutrition, read with the user's permission.
 - **Garmin Connect:** sleep, recovery, stress, Body Battery, daily summaries and activities, via the user's own Garmin personal API key.
 - **Calendars:** events from the calendar(s) the user selects as their plan (e.g. Outlook). Other calendars aren't stored.
-- **WhatsApp:** messages, photos and voice notes the user sends to VOW's coach number, and the coach's replies. Voice notes are **deleted immediately after transcription** by default.
+- **WhatsApp:** messages, photos and voice notes the user sends to VOW's coach number, and the coach's replies.
+- **Voice input:** voice notes on WhatsApp and speech in the app. Audio is **deleted immediately after transcription** by default. In the app, words are first recognised on the device. The recording is then transcribed by our speech-to-text provider for accuracy, unless the user turns on "Keep my voice on this iPhone".
 - **Things the user enters:** workouts, water, recovery sessions, injuries and rehab, goals, notes, and blood-test results the user uploads and confirms.
 
 ## How data is used
@@ -49,7 +50,7 @@ Data is stored in a private database hosted by **Supabase** in **Singapore**, en
 | Microsoft | Reading the selected Outlook calendar |
 | Garmin | Source of Garmin Connect data the user connects |
 | Apple | Sign in with Apple, Apple Health, push notifications |
-| Speech-to-text provider (to be selected) | Transcribing WhatsApp voice notes; audio is deleted after transcription |
+| OpenAI | Transcribing voice notes and in-app speech; audio is deleted after transcription |
 
 ## Retention and deletion
 
